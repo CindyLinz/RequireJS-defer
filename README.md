@@ -57,6 +57,32 @@ define([..., 'defer!deferred_module', ...], function(..., deferred_module, ...){
 
 Refer to the *test* directory as an example.
 
+---
+
+To define your deferred coffeescript module: (better tastes)
+
+```coffeescript
+define ['dep1', 'dep2', ..., 'depN'], (dep1, dep2, ..., depN) -> (load) ->
+    something_asynchronized ..., (some_stuff) ->
+        something_else_asynchronized ..., (some_other_stuff) ->
+            load(the_initialized_module)
+```
+
+---
+
+To require your coffeescript module:
+
+```javascript
+require([..., 'defer!cs!deferred_module', ...], function(..., deferred_module, ...){
+    // ...
+})
+```
+
+```coffeescript
+require [..., 'defer!cs!deferred_module', ...], (..., deferred_module, ...) ->
+    # ...
+```
+
 License
 =======
 
