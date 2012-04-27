@@ -8,6 +8,11 @@ you can work it out with this plugin.
 
 [RequireJS]: http://requirejs.org/
 
+Version
+=======
+
+0\.02
+
 Synopsis
 ========
 
@@ -90,4 +95,4 @@ Copyright 2012, Cindy Wang (CindyLinz)
 
 Dual licensed under the MIT or GPL Version 2 licenses.
 
-Date: 2012.4.22
+Date: 2012.4.27
